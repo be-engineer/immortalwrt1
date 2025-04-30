@@ -91,10 +91,10 @@ jobs:
     - name: Install feeds2
       run: cd openwrt && ./scripts/feeds install -a
 
-    - name: Modify KERNEL_PARTSIZE
+    - name: Modify KERNEL SIZE
       run: |
         cd openwrt
-        sed -i 's/KERNEL_PARTSIZE := .*/KERNEL_PARTSIZE := 5120/' target/linux/ramips/image/mt7621.mk
+        sed -i 's/KERNEL_SIZE := .*/KERNEL_SIZE := 8196/' target/linux/ramips/image/mt7621.mk
 
     - name: SSH connection to Actions
       uses: P3TERX/ssh2actions@v1.0.0
