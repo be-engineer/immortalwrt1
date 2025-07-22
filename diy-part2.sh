@@ -26,7 +26,7 @@
 
 # 克隆daed源码到package目录
 git clone https://github.com/daed/daed package/daed
-git clone https://github.com/daed/luci-app-daed package/luci-app-daed
+git clone https://github.com/QiuSimons/luci-app-daed package/luci-app-daed
 
 # 复制 luci-app-airplay2 文件夹到 feeds/luci/applications/
 # cp -r luci/applications/luci-app-airplay2/ feeds/luci/applications/luci-app-airplay2/
